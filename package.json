@@ -14,7 +14,7 @@
     "jshint": "^2.8.0"
   },
   "scripts": {
-	"deploy": "nohup nodemon hello.js &",
+	"deploy": "nohup nodemon hello.js </dev/null &",
     "test": "./node_modules/jshint/bin/jshint hello.js"
   }
 }
