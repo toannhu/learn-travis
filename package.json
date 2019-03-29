@@ -11,6 +11,7 @@
     "jshint": "^2.8.0"
   },
   "scripts": {
+	"stop": "pm2 stop hello.js",
 	"deploy": "pm2 restart hello.js",
     "test": "./node_modules/jshint/bin/jshint hello.js"
   }
