@@ -12,4 +12,4 @@ before_install:
   -in deploy_rsa.enc -out ~/.ssh/id_rsa -d
 after_success:
 - chmod 600 ~/.ssh/id_rsa
-- ssh pi@pi.toannhu.com -o StrictHostKeyChecking=no 'cd ~/Projects && git pull && npm install && npm run deploy'
+- ssh pi@pi.toannhu.com -o StrictHostKeyChecking=no 'cd ~/Projects/learn-travis && git pull && npm install && npm run deploy'
