@@ -7,14 +7,11 @@
   "description": "Simple nodejs, travis and grunt demo",
   "author": "https://twitter.com/nelsonic",
   "version": "1.0.0",
-  "dependencies": {
-	"nodemon": "^1.18.10"
-  },
   "devDependencies": {
     "jshint": "^2.8.0"
   },
   "scripts": {
-	"deploy": "nohup nodemon hello.js </dev/null &",
+	"deploy": "pm2 restart hello.js",
     "test": "./node_modules/jshint/bin/jshint hello.js"
   }
 }
