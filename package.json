@@ -11,6 +11,7 @@
     "jshint": "^2.8.0"
   },
   "scripts": {
+	"deploy": "node hello.js",
     "test": "./node_modules/jshint/bin/jshint hello.js"
   }
 }
